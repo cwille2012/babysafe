@@ -72,7 +72,7 @@ export class Dashboard extends React.Component<any, any> {
                 alert('Could not get car data, please try again');
             }
         })
-        setTimeout(this.getCarData, 1000);
+        setTimeout(this.getCarData, 2500);
     }
 
     public render() {
