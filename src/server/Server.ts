@@ -87,6 +87,8 @@ var loginSchema = {
     ]
 }
 
+app.use(express.static('img'))
+
 app.post('/login', (req, res) => {
     var incomingData = req.body;
     console.log(incomingData)
