@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { Route, BrowserRouter, Redirect, Switch } from 'react-router-dom';
 import { Login } from './components/Login';
 import { Dashboard } from './components/Dashboard';
+import { NotFound } from './components/NotFound';
 declare let module: any
 
 var authenticated = false;
@@ -38,6 +39,8 @@ var routes = (
                 ? <Redirect to="/login"/>
                 : <Redirect to="/"/>
             )}/>
+
+            <Route render={(props) => <NotFound {...props} /> } />
 
         </Switch>
     </BrowserRouter>
