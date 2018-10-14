@@ -122,7 +122,7 @@ export class Dashboard extends React.Component<any, any> {
 
                     <div className="col-lg-3 col-md-6 mb-4">
                         <div className="card">
-                            <img className="card-img-top" src="http://placehold.it/500x325" alt="" />
+                            <img className="card-img-top" src="/engine.jpg" alt="" />
                             <div className="card-body">
                                 <h4 className="card-title">Engine</h4>
                                 <p className="card-text">{'Status: ' + (data.EngineOn ? 'On' : 'Off')}</p>
@@ -135,7 +135,7 @@ export class Dashboard extends React.Component<any, any> {
 
                     <div className="col-lg-3 col-md-6 mb-4">
                         <div className="card">
-                            <img className="card-img-top" src="http://placehold.it/500x325" alt="" />
+                            <img className="card-img-top" src="/ac.jpg" alt="" />
                             <div className="card-body">
                                 <h4 className="card-title">Air Conditioner</h4>
                                 <p className="card-text">{'Status: ' + (data.DoorsLocked ? 'On' : 'Off')}</p>
@@ -148,7 +148,7 @@ export class Dashboard extends React.Component<any, any> {
 
                     <div className="col-lg-3 col-md-6 mb-4">
                         <div className="card">
-                            <img className="card-img-top" src="http://placehold.it/500x325" alt="" />
+                            <img className="card-img-top" src="/door.jpg" alt="" />
                             <div className="card-body">
                                 <h4 className="card-title">Door Locks</h4>
                                 <p className="card-text">{'Status: ' + (data.DoorsLocked ? 'Locked' : 'Unlocked')}</p>
