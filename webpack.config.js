@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         app: ['webpack-hot-middleware/client?reload=true', resolve(path.join(__dirname, 'src', 'browser', 'App.tsx'))],
-        vendor: ['webpack-hot-middleware/client?reload=true', 'react', 'react-dom']
+        vendor: ['webpack-hot-middleware/client?reload=true', 'react', 'react-dom', 'react-router-dom']
     },
     output: {
         path: resolve(path.join(__dirname, 'build', 'public')),
