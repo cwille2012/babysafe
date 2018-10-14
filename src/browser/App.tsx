@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Route, BrowserRouter, Redirect, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Redirect, Switch } from 'react-router-dom';
 import { Login } from './components/Login';
 import { Dashboard } from './components/Dashboard';
 declare let module: any
@@ -18,7 +18,7 @@ function logout() {
 }
 
 var routes = (
-    <BrowserRouter>
+    <Router>
         <Switch>
 
             <Route exact path="/" render={(props) => (
@@ -40,7 +40,7 @@ var routes = (
             )}/>
 
         </Switch>
-    </BrowserRouter>
+    </Router>
 );
 
 ReactDOM.render(routes, document.getElementById('app'));
