@@ -1,0 +1,22 @@
+# Put this as first line in main js file: #!/usr/bin/env node
+# Make a symlink: systemctl enable /full/path/to/<appname.service>
+# If this file is edited: systemctl daemon-reload
+# Start: systemctl start <appname>
+# Stop: systemctl stop <appname>
+# See logs: journalctl -u <appname>
+[Unit]
+Description=CHARM Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Environment=SERVER_URL='http://18.223.81.113:80'
+Environment=SERVER_PORT=80
+Environment=DB_CONNECTION_STRING=nodbneeded
+ExecStart=/usr/bin/node /babysafe/build/server/Server.js
+Restart=on-failure
+WorkingDirectory=/root/babysafe
+
+[Install]
+WantedBy=multi-user.target
