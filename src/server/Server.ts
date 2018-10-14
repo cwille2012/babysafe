@@ -57,7 +57,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
    stats: { colors: true }
 }));
 
-require('./modules/env');
+//require('./modules/env');
 
 var carStatus = { 
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_blank_black_picture.jpg",
@@ -159,7 +159,7 @@ app.get('*', (req, res) => {
     res.sendFile(indexFile);
 });
 
-app.listen(process.env.SERVER_PORT, () => {
-    console.log(`Webserver started on port ${process.env.SERVER_PORT}`);
-    console.log(`Webserver address: ${process.env.SERVER_URL}`);
+app.listen(80, () => {
+    console.log(`Webserver started on port ${80}`);
+    console.log(`Webserver address: ${'process.env.SERVER_URL'}`);
 });
