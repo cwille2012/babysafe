@@ -11,12 +11,12 @@ After=network.target
 [Service]
 Type=simple
 User=root
-Environment=SERVER_URL='http://18.223.81.113:80'
+Environment=SERVER_URL=http://18.223.81.113:80
 Environment=SERVER_PORT=80
 Environment=DB_CONNECTION_STRING=nodbneeded
 ExecStart=/usr/bin/node /babysafe/build/server/Server.js
 Restart=on-failure
-WorkingDirectory=/root/babysafe
+WorkingDirectory=/babysafe
 
 [Install]
 WantedBy=multi-user.target
