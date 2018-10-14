@@ -5,7 +5,7 @@
 # Stop: systemctl stop <appname>
 # See logs: journalctl -u <appname>
 [Unit]
-Description=CHARM Dashboard
+Description=BabySafe Dashboard
 After=network.target
 
 [Service]
