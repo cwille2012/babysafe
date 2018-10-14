@@ -60,7 +60,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 //require('./modules/env');
 
 var carStatus = { 
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_blank_black_picture.jpg",
+    imageUrl: "/lastCapture.jpg",
     Temperature: 24.6,
     DateTime: "Sun Oct 14 2018 07:18:16 GMT-0400 (Eastern Daylight Time)",
     PIRalarm: false,
