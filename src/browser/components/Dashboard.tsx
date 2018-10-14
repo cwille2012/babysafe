@@ -99,7 +99,7 @@ export class Dashboard extends React.Component<any, any> {
         return (
             <div className="container">
                 <header className="jumbotron my-4">
-                    <h1 style={{textAlign: 'center'}}className="display-3">BabySafe Dashboard</h1>
+                    <h1 style={{textAlign: 'center'}}className="display-3">Safety Dashboard</h1>
                 </header>
 
                 <div className="row text-center">
