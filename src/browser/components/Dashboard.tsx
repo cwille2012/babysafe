@@ -106,8 +106,8 @@ export class Dashboard extends React.Component<any, any> {
                     <h4 style={{textAlign: 'center', width: '100%'}} className="card-title">Interior Temperature</h4>
                     <div id="thermcontainer">
                         <div id="glass">
-                            <div id="merc" style={{width: String(Number(data.Temperature/140 * 100) + '%'), backgroundColor: String((data.Temperature > 80) ? 'red' : 'green')}}>
-                                <p style={{color: 'black', position: 'relative', left: '40%', width: '100%'}}>{'Temperature: ' + data.Temperature + 'F'}</p>
+                            <div id="merc" style={{width: String(Number(data.Temperature/140 * 100 * 1.8 + 32) + '%'), backgroundColor: String((data.Temperature > 80) ? 'red' : 'green')}}>
+                                <p style={{color: 'black', position: 'relative', left: '40%', width: '100%'}}>{'Temperature: ' + Number(data.Temperature*1.8 + 32) + 'F'}</p>
                             </div>
                         </div>
                         <div id="regla">
