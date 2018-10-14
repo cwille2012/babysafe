@@ -159,7 +159,7 @@ app.get('*', (req, res) => {
     res.sendFile(indexFile);
 });
 
-app.listen(9600, () => {
-    console.log(`Webserver started on port ${9600}`);
+app.listen(80, () => {
+    console.log(`Webserver started on port ${80}`);
     console.log(`Webserver address: ${''}`);
 });
